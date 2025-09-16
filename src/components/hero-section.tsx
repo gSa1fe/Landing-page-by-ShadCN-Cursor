@@ -28,7 +28,7 @@ export function HeroSection() {
   }, [])
 
   // Function to split text into characters and wrap each in a span
-  const renderAnimatedText = (text: string, className: string) => {
+  const renderAnimatedText = (text: string) => {
     return text.split('').map((char, index) => (
       <span key={index} className="char inline-block" style={{ overflow: 'hidden' }}>
         <span className="inline-block">{char === ' ' ? '\u00A0' : char}</span>
@@ -57,13 +57,13 @@ export function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight"
           >
             <div className="block text-foreground overflow-hidden">
-              {renderAnimatedText("INTELLIGENT", "text-foreground")}
+              {renderAnimatedText("INTELLIGENT")}
             </div>
             <div className="block text-foreground overflow-hidden">
-              {renderAnimatedText("ANALYTICS,", "text-foreground")}
+              {renderAnimatedText("ANALYTICS,")}
             </div>
             <div className="block text-primary overflow-hidden">
-              {renderAnimatedText("FINALLY.", "text-primary")}
+              {renderAnimatedText("FINALLY.")}
             </div>
           </h1>
           
@@ -79,3 +79,4 @@ export function HeroSection() {
     </section>
   )
 }
+

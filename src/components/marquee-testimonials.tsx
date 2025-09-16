@@ -14,61 +14,61 @@ const testimonials = [
     name: "Sarah Chen",
     company: "TechStart Inc.",
     quote: "StatsAI transformed our analytics completely.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Marcus Rodriguez",
     company: "GrowthCo",
     quote: "Incredible insights that drive real results.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Emily Watson",
     company: "InnovateLab",
     quote: "Finally, analytics that actually make sense.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "David Kim",
     company: "StartupXYZ",
     quote: "AI-powered recommendations saved us months.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Lisa Thompson",
     company: "RetailMax",
     quote: "Game-changing conversion tracking features.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Alex Johnson",
     company: "DataFlow",
     quote: "Enterprise security with startup ease of use.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Maria Garcia",
     company: "CloudTech",
     quote: "Real-time analytics at lightning speed.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "James Wilson",
     company: "ScaleUp",
     quote: "The ROI was immediate and substantial.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Anna Lee",
     company: "NextGen",
     quote: "Perfect for our growing team needs.",
-    avatar: null
+    avatar: undefined
   },
   {
     name: "Tom Brown",
     company: "FutureCorp",
     quote: "Identified bottlenecks we never knew existed.",
-    avatar: null
+    avatar: undefined
   }
 ]
 
@@ -163,7 +163,7 @@ export function MarqueeTestimonials() {
                     </Avatar>
                     <div className="flex-1 min-w-0">
                       <blockquote className="text-sm text-muted-foreground mb-2 leading-relaxed">
-                        "{testimonial.quote}"
+                        &ldquo;{testimonial.quote}&rdquo;
                       </blockquote>
                       <div className="text-xs font-semibold">{testimonial.name}</div>
                       <div className="text-xs text-muted-foreground">{testimonial.company}</div>
@@ -195,7 +195,7 @@ export function MarqueeTestimonials() {
                     </Avatar>
                     <div className="flex-1 min-w-0">
                       <blockquote className="text-sm text-muted-foreground mb-2 leading-relaxed">
-                        "{testimonial.quote}"
+                        &ldquo;{testimonial.quote}&rdquo;
                       </blockquote>
                       <div className="text-xs font-semibold">{testimonial.name}</div>
                       <div className="text-xs text-muted-foreground">{testimonial.company}</div>
@@ -233,7 +233,7 @@ export function MarqueeTestimonials() {
                   </Avatar>
                   <div className="flex-1 min-w-0">
                     <blockquote className="text-sm text-muted-foreground mb-2 leading-relaxed">
-                      "{testimonial.quote}"
+                      &ldquo;{testimonial.quote}&rdquo;
                     </blockquote>
                     <div className="text-xs font-semibold">{testimonial.name}</div>
                     <div className="text-xs text-muted-foreground">{testimonial.company}</div>
@@ -264,7 +264,7 @@ export function MarqueeTestimonials() {
                   </Avatar>
                   <div className="flex-1 min-w-0">
                     <blockquote className="text-sm text-muted-foreground mb-2 leading-relaxed">
-                      "{testimonial.quote}"
+                      &ldquo;{testimonial.quote}&rdquo;
                     </blockquote>
                     <div className="text-xs font-semibold">{testimonial.name}</div>
                     <div className="text-xs text-muted-foreground">{testimonial.company}</div>
@@ -278,3 +278,5 @@ export function MarqueeTestimonials() {
     </section>
   )
 }
+
+
